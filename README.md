@@ -7,7 +7,7 @@ https://github.com/haven-jeon/TrainKoSpacing 을 토대로 Colab에서 작동 �
 
 ### 필수 설치
 ```bash
-!pip install -r /content/TrainKoSpacing/requirements.txt
+!pip install -r /content/TrainKoSpacingForColab/requirements.txt
 ```
 
 ### 훈련
