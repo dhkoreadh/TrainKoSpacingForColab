@@ -58,14 +58,14 @@ parser.add_argument('--num-gpus',
 
 parser.add_argument('--vocab-file',
                     type=str,
-                    default='/content/TrainKoSpacing/model/w2idx.dic',
-                    help='vocabarary file (default: /content/TrainKoSpacing/model/w2idx.dic)')
+                    default='/content/TrainKoSpacingForColab/model/w2idx.dic',
+                    help='vocabarary file (default: /content/TrainKoSpacingForColab/model/w2idx.dic)')
 
 parser.add_argument(
     '--embedding-file',
     type=str,
-    default='/content/TrainKoSpacing/model/kospacing_wv.np',
-    help='embedding matrix file (default: /content/TrainKoSpacing/model/kospacing_wv.np)')
+    default='/content/TrainKoSpacingForColab/model/kospacing_wv.np',
+    help='embedding matrix file (default: /content/TrainKoSpacingForColab/model/kospacing_wv.np)')
 
 parser.add_argument('--train',
                     action='store_true',
