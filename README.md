@@ -1,18 +1,34 @@
 https://github.com/haven-jeon/TrainKoSpacing 을 토대로 Colab에서 작동 가능하도록 수정
 
-# 클론
+### 클론
+```bash
 !git clone https://github.com/dhkoreadh/TrainKoSpacingForColab.git
-# 필수 설치
+```
+
+### 필수 설치
+```bash
 !pip install -r /content/TrainKoSpacing/requirements.txt
+```
 
-# 훈련
+### 훈련
+```bash
 !python3 /content/TrainKoSpacing/train.py --train --train-samp-ratio 1.0 --num-epoch 20 --train_data /content/train_oko.txt.bz2 --test_data /content/test_oko.txt.bz2 --outputs train_log_to --model_type kospacing
+```
 
-# 모델 확인01
+### 모델 확인01
+```bash
 !python3 /content/TrainKoSpacing/train.py --model-params /content/TrainKoSpacing/model/kospacing.params --model_type kospacing
+```
 
-# 모델 확인02
+### 모델 확인02
+```bash
 !python3 /content/TrainKoSpacing/train.py --model-params /content/train_log_to/kospacing_15.params --model_type kospacing
+```
+
+
+
+
+
 
 
 
