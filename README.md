@@ -1,3 +1,20 @@
+https://github.com/haven-jeon/TrainKoSpacing 을 토대로 Colab에서 작동 가능하도록 수정
+
+# 클론
+!git clone https://github.com/dhkoreadh/TrainKoSpacingForColab.git
+# 필수 설치
+!pip install -r /content/TrainKoSpacing/requirements.txt
+
+# 훈련
+!python3 /content/TrainKoSpacing/train.py --train --train-samp-ratio 1.0 --num-epoch 20 --train_data /content/train_oko.txt.bz2 --test_data /content/test_oko.txt.bz2 --outputs train_log_to --model_type kospacing
+
+# 모델 확인01
+!python3 /content/TrainKoSpacing/train.py --model-params /content/TrainKoSpacing/model/kospacing.params --model_type kospacing
+
+# 모델 확인02
+!python3 /content/TrainKoSpacing/train.py --model-params /content/train_log_to/kospacing_15.params --model_type kospacing
+
+
 
 - [Automatic Korean word spacing with neural n-gram detector(NND)](#automatic-korean-word-spacing-with-neural-n-gram-detectornnd)
 	- [Introduction](#introduction)
